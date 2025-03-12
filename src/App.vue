@@ -78,6 +78,13 @@ onMounted(() => {
   </div>
 </template>
 
+<style>
+body {
+  background-color: #71a6c2;
+  font-family: Arial, sans-serif;
+}
+</style>
+
 <style scoped>
 /* center main container */
 .container {
@@ -97,12 +104,19 @@ onMounted(() => {
 input {
   flex: 1;
   padding: 8px;
+  background-color: #d4d3c9; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  color: #333; 
 }
 
 /* style add button */
 button {
   padding: 8px 12px;
   cursor: pointer;
+  background-color: #d4d3c9; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
 }
 
 /* remove default list styles */
@@ -122,6 +136,11 @@ li {
 /* style completed tasks (crossed-out text) */
 .completed {
   text-decoration: line-through;
-  color: gray;
+  color: #555;
+}
+
+/* text in to-do list */
+li span {
+  font-weight: bold;
 }
 </style>
